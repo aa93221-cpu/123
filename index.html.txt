@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA 測試</title>
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>PWA 測試成功</h1>
+  <p>這是一個 iPhone PWA 測試頁</p>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
